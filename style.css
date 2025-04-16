@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2e2e2e;
+    color: #f4f4f4;
+}
+/* Header Styles */
+.header {
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo img {
+    max-width: 100px;
+}
+
+.header .navbar {
+    margin-top: 10px;
+}
+
+.header .navbar a {
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.header .navbar a:hover {
+    background-color: #444;
+}
+
+/* Menu Section Styles */
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #3b3b3b;
+}
+
+.menu .heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.menu .heading span {
+    color: #ff6f61;
+}
+
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu .box {
+    background: #1c1c1c;
+    padding: 20px;
+    border: 1px solid #444;
+    width: 250px;
+    text-align: center;
+}
+
+.menu .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+}
+
+.menu .box h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #f4f4f4;
+}
+
+.menu .box .price {
+    font-size: 1.5em;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.menu .box .price span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.menu .box .btn {
+    background-color: #444;
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.menu .box .btn:hover {
+    background-color: #ff6f61;
+}
+/* QR Code Popup Styles */
+#qr-code {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half of its size */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it is above other content */
+    text-align: center; /* Center align content */
+}
+
+.qr-code-header {
+    margin-bottom: 10px; /* Space between "Close" and QR code */
+}
+
+.qr-code-header span {
+    display: inline-block; /* Inline-block to align center */
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+#qr-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer .share a {
+    color: #e0e0e0; /* Light grey */
+    font-size: 30px; /* Adjust size as needed */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s; /* Optional: Smooth transition for hover effect */
+}
+
+.footer .share a:hover {
+    color: #f0f0f0; /* Optional: Change color on hover */
+}
+
+.footer .credit {
+    margin-top: 20px;
+}
+.footer .quick-links {
+    margin-bottom: 25px;
+  }
+  .footer .quick-links h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+  }
+  .footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .quick-links ul li {
+    margin-bottom: 12px;
+  }
+  .footer .quick-links ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
